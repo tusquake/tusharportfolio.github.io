@@ -259,8 +259,8 @@ section .title::after{
 
 /* services section styling */
 .services, .teams{
-    color:#fff;
-    background: #111;
+    color:#0a0101;
+    background: #dbeff1;
 }
 .services .title::before,
 .teams .title::before{
@@ -273,7 +273,7 @@ section .title::after{
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: #5479c5;
     text-align: center;
     border-radius: 6px;
     padding: 35px 25px;
@@ -291,7 +291,7 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: rgb(88, 96, 211);
+    color: rgb(243, 243, 58);
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -321,18 +321,18 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: skyblue;
+    background: fff;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    padding: 8px 16px;
+    padding: 5px 5px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(88, 96, 211);
-    transition: all 0.3s ease;
+    /* border: 2px solid rgb(201, 211, 88); */
+    transition: all 0.3s ease-in;
 }
 .skills .skills-content .left a:hover{
-    color: rgb(88, 96, 211);
+    color: rgb(88, 209, 211);
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -360,7 +360,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: rgb(88, 96, 211);
+    background: rgb(211, 211, 88);
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -378,164 +378,11 @@ section .title::after{
     width: 70%;
 }
 
-/* teams section styling */
-.teams .title::after{
-    content: "who with me";
-}
-.teams .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover{
-    background: rgb(88, 96, 211);
-}
-.teams .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.teams .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid rgb(88, 96, 211);
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid rgb(88, 96, 211)!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: rgb(88, 96, 211)!important;
-}
-
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
 }
-/* .contact .contact-content .column{
-    width: calc(50% - 30px);
-}
-.contact .contact-content .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.contact .contact-content .left p{
-    text-align: justify;
-}
-.contact .contact-content .left .icons{
-    margin: 10px 0;
-}
-.contact .contact-content .row{
-    display: flex;
-    height: 65px;
-    align-items: center;
-}
-.contact .contact-content .row .info{
-    margin-left: 30px;
-}
-.contact .contact-content .row i{
-    font-size: 25px;
-    color: rgb(88, 96, 211);
-}
-.contact .contact-content .info .head{
-    font-weight: 500;
-}
-.contact .contact-content .info .sub-title{
-    color: #333;
-}
-.contact .right form .fields{
-    display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.contact .right form .textarea{
-    height: 80px;
-    width: 100%;
-}
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-}
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
-}
-.contact .right form .textarea textarea{
-  padding-top: 10px;
-  resize: none;
-}
-.contact .right form .button-area{
-  display: flex;
-  align-items: center;
-}
-.right form .button-area button{
-  color: #fff;
-  display: block;
-  width: 160px!important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background: rgb(88, 96, 211);
-  border: 2px solid rgb(88, 96, 211);
-  transition: all 0.3s ease;
-}
-.right form .button-area button:hover{
-  color: rgb(88, 96, 211);
-  background: none;
-} */
+
 * {
     padding: 0;
     margin: 0;
@@ -588,7 +435,7 @@ section .title::after{
     font-size: 24px;
     border-radius: 8px;
     font-family: "Montserrat";
-    color: rgb(27, 166, 247);
+    color: rgb(88, 96, 211);
     text-align: center;
     cursor: pointer;
     margin-top: 10px;
